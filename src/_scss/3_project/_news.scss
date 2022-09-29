@@ -1,0 +1,115 @@
+.p-news {
+    .c-question {
+        background: url("assets/img/bg_news.jpg") center no-repeat;
+        background-size: cover;
+
+        &__about {
+            bottom: 41px;
+
+            &title {
+                font-size: 4rem;
+                color: #00ada0;
+                border: 0;
+                line-height: 1.1;
+            }
+
+            &text {
+                font-size: 2.4rem;
+                color: #000;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .c-breadcrumb {
+        @include tab {
+            padding: 33px 0 34px;
+        }
+    }
+
+    .c-news {
+        padding: 34px 0 0;
+
+        @include tab {
+            padding: 10px 0 0;
+        }
+
+        @include sp {
+            padding: 6px 0 15px;
+        }
+
+        &__table {
+            margin-top: 10px;
+            @include tab {
+                margin-top: 0;
+            }
+
+            tr {
+                &:nth-child(1) {
+                    border-top: 0;
+                }
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+            
+        }
+    }
+
+    .l-newswrap {
+        width: 92%;
+
+        &::before {
+            background: unset;
+            height: unset;
+            width: unset;
+        }
+    }
+
+    .l-questionwrap {
+        min-height: 166px;
+    }
+
+    .c-pagination {
+        margin: 74px 0 0;
+        padding-top: 50px;
+        margin-bottom: 130px;
+        @include tab {
+            margin: 10px 0 0;
+            padding-top: 30px;
+        }
+        @include sp {
+            margin: 15px 0 0;
+            padding-top: 30px;
+        }
+
+        &__prev {
+            margin: 0;
+            position: relative;
+            left: -15px;
+            @include sp {
+                font-size: 1.2rem;
+            }
+        }
+
+        &__next {
+            margin: 0;
+            position: relative;
+            left: 12px;
+            @include sp {
+                font-size: 1.2rem;
+            }
+        }
+
+        &__number {
+            margin: 0 4px 0 3px;
+            @include sp {
+                font-size: 1.2rem;
+                width: 20px;
+                height: unset;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,15 @@
+.p-company,
+.p-companysingle {
+    .c-question {
+        background: url("assets/img/bg_company.jpg") center no-repeat;
+        background-size: cover;
+
+        &__about {
+            width: 600px;
+            @include sp {
+                width: unset;
+            }
+        }
+    }
+
+}

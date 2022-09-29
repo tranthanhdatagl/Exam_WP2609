@@ -1,0 +1,63 @@
+/*------------------------------------------------------------
+Pagination
+------------------------------------------------------------*/
+.c-pagination {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-top: -8px;
+    padding-top: 51px;
+    margin-bottom: 129px;
+    @include tab {
+        margin: 10px 0 5px;
+        padding-top: 40px;
+    }
+    @include sp {
+        margin: 15px 0 0;
+        padding-top: 30px;
+    }
+
+    &__number {
+        font-size: 2rem;
+        display: inline-block;
+        width: 40px;
+        line-height: 2;
+        height: 42px;
+        color: #000;
+        margin: 0 -2px 0 8px;
+        border: 3px #000 solid;
+
+        @include sp {
+            font-size: 1.2rem;
+            width: 20px;
+            height: unset;
+            margin: 0 -2px 0 8px;
+        }
+    }
+
+    &__current {
+        color: #fff;
+        background-color: #000;
+    }
+
+    &__next,
+    &__prev {
+        font-size: 1.8rem;
+        margin: 0 14px 0 18px;
+        border: 0;
+        @include tab{
+            margin: 0 14px 0 5px;
+        }
+        @include sp {
+            font-size: 1.2rem;
+            margin: 0 -2px 0 5px;
+        }
+    }
+
+    a:hover {
+        color: #fff;
+        background-color: #000;
+    } 
+}
+
+/*------------------------------------------------------------
+------------------------------------------------------------*/

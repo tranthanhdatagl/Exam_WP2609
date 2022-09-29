@@ -1,0 +1,29 @@
+.p-companysingle {
+    .c-list {
+        &__content {
+            width: calc(45.9% - 2px);
+        }
+
+        &__title {
+            font-size: 3rem;
+        }
+
+        &__subtitle {
+            font-size: 1.4rem;
+        }
+
+        &__desc {
+            font-size: 2.4rem;
+        }
+
+        &__benefit {
+            font-size: 1.4rem;
+            border-radius: 22px;
+            padding: 6px 19px;
+            display: inline-block;
+            line-height: 1.4;
+            margin: 15px 0 20px;
+            height: unset;
+        }
+    }
+}

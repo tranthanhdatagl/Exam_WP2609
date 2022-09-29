@@ -1,0 +1,11 @@
+.c-companydesc {
+    margin-top: 34px;
+
+    &__wrapper {
+        display: flex;
+        width: 100%;
+        position: relative;
+        font-feature-settings: "palt" 1;
+    }
+    
+}
